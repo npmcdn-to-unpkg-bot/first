@@ -1,0 +1,63 @@
+#left .leftTitle{	
+	height:60px;
+	width:100%;
+	cursor: pointer;
+	/*background:#fff;	*/
+}
+#left .leftTitle p{
+	float:left;
+	color:#eee;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	margin-left: 20px;
+	line-height: 60px;
+}
+#left .leftCon{
+	height:723px;
+	width:100%;
+	/*background:red;*/
+}
+#centerTabNav{
+	width:100%;
+	height:35px;
+	padding:0;
+}
+#centerTabNav ul{
+	height:35px;
+	padding:0;
+	margin:0;
+	background: #3f4652;
+}
+#centerTabNav ul li{
+	cursor: pointer;
+	background: #5f7189;
+	padding:0;
+	margin:0 2px;
+	border-radius: 2px;
+	float:left;
+	direction: none;
+	list-style: none;
+	width:140px;
+	height:35px;
+}
+.centerTabNavHover{
+	background: #e98f05;
+}
+#centerTabNav ul li p{
+	color:#eee;
+	font-family: "微软雅黑";
+	text-align: center;
+	font-size: 16px;
+	margin:0 10px;
+	padding:0;
+	display: block;
+	line-height: 35px;
+}
+#centerTabCon .centerTabItems{
+	width:100%;
+	height:867px;
+}
+#map img{
+	height:100%;
+	width:100%;
+}

@@ -11,7 +11,14 @@
 	<link rel="stylesheet" href="css/map.css">
 </head>
 <body>
-	<div id="header"></div>
+	<div id="header">
+		<div></div>
+		<div>
+			
+			<div id="headerManager"><img src="imgs/managerIcon.jpg" alt=""><a href="">退出登录</a></div>
+			<div id="headerTime" style=""></div>
+		</div>
+	</div>
 	
 	<div id="container">
 	<div id="map">
@@ -87,6 +94,18 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/leftTabPanel.js"></script>
 	<script>
+		
+		
+		var HtimeInter = setInterval(function(){
+			var Htimes = new Date();
+			var Hyears = Htimes.getFullYear();
+			var Hmonth = Htimes.getMonth();
+			var Hdate = Htimes.getDate();
+			var Hday = Htimes.getDay();
+			var Htime = Htimes.toLocaleTimeString();			
+			$('#headerTime').html(Hyears + "年" + Hmonth + "月" + Hdate + "日" + "<br>" + 
+			Htime);
+		},1000);
 		
 	</script>
 </body>

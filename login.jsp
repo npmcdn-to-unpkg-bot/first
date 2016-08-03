@@ -18,16 +18,16 @@
 				<div id="loginManager" style="width:100%;height:34px;">
 					<label>账号:</label><input type="text" placeholder="请输入账号"><br/></div>
 				<div id="loginPassword" style="width:100%;height:34px;">
-					<label>密码:</label><input type="text" placeholder="请输入密码">
+					<label>密码:</label><input type="password" placeholder="请输入密码">
 				</div>
 				<button id="loginReset">重置</button>
 				<button id="loginSubmit">登录</button>								
 			</div>
 		</form>
-		<div id="loginManagerWarning" class="loginWarning"><strong>!请输入账号</strong></div>
-		<div id="loginPasswordWarning" class="loginWarning"><strong>!请输入密码</strong></div>
+		<div id="loginManagerWarning" class="loginWarning">! 请输入账号</div>
+		<div id="loginPasswordWarning" class="loginWarning">! 请输入密码</div>
 	</div>
-	<script src="build/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script>
 		(function(){
 			$(".loginWarning").hide();

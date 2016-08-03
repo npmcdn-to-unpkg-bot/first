@@ -16,7 +16,8 @@ body{
 #loginBox .loginWarning{
 	width:150px;
 	height:50px;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: "微软雅黑";
 	color: red;
 	/*border:1px solid red;*/
 	border-radius: 6px;
@@ -110,12 +111,20 @@ body{
 	float:left;
 	width:100px;
 	height:35px;
-	border-radius: 8px;
+	border:0;
+	border-radius: 5px;
 	margin-top: 40px;
 	margin-right: 20px;
+	margin-left: 10px;
 	font-size: 20px;
 	font-family: "微软雅黑";
 	line-height: 25px;
-	background: #3f4857;
+	background-image:linear-gradient(0deg,#2b3540,#3f4857,#2b3540);
 	color:#eee;
+	cursor:pointer;
+}
+#loginBody button:active{
+	outline: none;
+	color:#777;
+	background-image:linear-gradient(0deg,#3f4857,#2b3540,#3f4857);
 }

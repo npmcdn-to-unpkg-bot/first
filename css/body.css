@@ -31,3 +31,31 @@
 		float:left;
 		background:#333;
 	}
+	#headerTime{
+		margin-top: 2px;
+		height:48px;
+		color:#eee;
+		font-size: 16px;
+		font-family: "微软雅黑";
+		width:150px;
+		float:right;
+		/*line-height: 50px;*/
+	}
+	#headerManager{
+		height:50px;
+		width:150px;
+		float: right;
+	}
+	#headerManager img{
+		margin:3px 5px 0 0;
+	}
+	#headerManager a{
+
+		height:50px;
+		width:70px;
+		line-height: 50px;
+		text-decoration: none;
+		color:#eee;
+		font-size: 16px;
+		font-family: "微软雅黑";
+	}

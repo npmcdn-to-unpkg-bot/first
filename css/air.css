@@ -1,0 +1,44 @@
+#articAirTitle{
+	height:87px;
+	width:1589px;
+}
+#articAirTitle h1{
+	color:#eee;
+	font-size:50px;
+	font-family: "微软雅黑";
+	text-align: center;
+	line-height: 87px;
+}
+#articAirTable{
+	color:#eee;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	width:1589px;
+	height:700px;
+}
+#articAirTable>thead{
+	line-height:70px;
+	background: #3f4656;
+}
+#articAirTable>tbody>tr{
+	background:#fff;
+
+}
+#articAirTable>tbody>tr>td{
+	height:120px;
+	border:1px #000 solid;
+	color:#333;
+}
+#articAirTable>tbody>tr>td img{
+	height:100px;
+	margin:10px;
+	float:left;
+}
+#articAirTable>tbody>tr>td p{
+	display: block;
+	width:120px;
+	float:right;
+	line-height: 60px;
+	word-wrap:break-word; 
+}

@@ -3,53 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户登录</title>
-	<link rel="stylesheet" href="css/login.css">
-	
+	<link rel="stylesheet" href="css/login.css">	
 </head>
 <body>
-	<div id="loginBox">
-		<form id="loginForm">
-			<div id="loginTitle">
+		<form id="form">
+			<div id="formBg"></div>
+			<div id="title">
 				<img src="imgs/managerIcon.jpg" alt="">
 				<p>管理员登录</p>
 			</div>
-			<div id="loginBody">
-				<div id="loginBodyBg"></div>
-				<div id="loginManager" style="width:100%;height:34px;">
-					<label>账号:</label><input type="text" placeholder="请输入账号"><br/></div>
-				<div id="loginPassword" style="width:100%;height:34px;">
-					<label>密码:</label><input type="password" placeholder="请输入密码">
-				</div>
-				<button id="loginReset">重置</button>
-				<button id="loginSubmit">登录</button>								
+			<div id="loginManager">
+				<label>账号 :</label><input type="text" placeholder="请输入账号"><br/></div>
+			<div id="loginPassword">
+				<label>密码 :</label><input type="password" placeholder="请输入密码">
 			</div>
-		</form>
-		<div id="loginManagerWarning" class="loginWarning">! 请输入账号</div>
-		<div id="loginPasswordWarning" class="loginWarning">! 请输入密码</div>
-	</div>
-	<script src="js/jquery.min.js"></script>
+			<div id="loginReset">重置</div>
+			<div id="loginSubmit">登录</div>
+			<div class="loginWarning" id="managerWarning" class="warning">! 请输入账号</div>
+			<div class="loginWarning" id="passwordWarning" class="warning">! 请输入密码</div>
+		</form>		
+
 	<script>
-		(function(){
+		
+	</script>	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/login.js"></script> -->
+	<script>		
+			(function(){
 			$(".loginWarning").hide();
 			$("#loginSubmit").click(function(){
 				if($('#loginManager input').val() == ""){
 					$('#loginManager input').focus();
-					$("#loginManagerWarning").show();
+					$("#managerWarning").show();
 				}else{
-					$("#loginManagerWarning").hide();
+					$("#managerWarning").hide();
 					if($('#loginPassword input').val() == ""){
 					$('#loginPassword input').focus();
-					$("#loginPasswordWarning").show();
-				}else{
-					$("#loginPasswordWarning").hide();
-				};
+					$("#passwordWarning").show();
+					}else{
+						$("#passwordWarning").hide();
+						$.ajax({ 
+						    type: "post", 	
+							url: "",
+							data:{
+								uesername:$('#loginManager input').val(),
+								password:$('#loginPassword input').val()
+							},
+							dataType: "json",
+							success: function(data) {
+								if (data.success) { 
+									location.href = 'index.jsp';
+								}
+							},
+							error: function(data){     
+							   	$('#loginManager input').focus();
+								$("#managerWarning").show(); 
+								$('#loginManager input').val(""); 
+							},     
+						});
+					};
 				};
 				return false;
 			});
 			$("#loginReset").click(function(){
 				// alert("hi");
-				$('#loginManager input').val() = "";
-				$('#loginPassword input').val() = "";			
+				$('#loginManager input').focus().val("");	
+				$('#loginPassword input').val("");		
 				return false;
 			});
 			$('#loginManager input').focus(function(){
@@ -61,8 +79,14 @@
 				$(this).attr("placeholder","")
 			}).blur(function(){
 				$(this).attr("placeholder","请输入密码");
-			});	
-		})()
+			});
+
+			$('body').keyup(function(){
+          		if (event.keyCode == 13)   //回车键的键值为13
+                {$("#loginSubmit").click()};  //调用登录按钮的登录事件
+    		});	
+		})();
+
 	</script>
 </body>
 </html>

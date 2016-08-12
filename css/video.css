@@ -1,0 +1,71 @@
+#artic1{
+	width:100%;
+	height:44.5rem;
+	background:#484c58;
+	display: none;
+}
+#articNav{
+	float: left;
+	width:331px;
+	height:100%;
+	background:#3f4656; 
+}
+#articNav .articNavItem{
+	height:100px;
+	width:100%;
+	margin:0 0 10px 0;
+	line-height: 100px;
+	text-align: center;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color:#eee;
+	cursor: pointer;
+}
+.articNavItemHover{
+	background: #484c58;
+}
+.articNavItemActive{                 	/*右边导航栏选中状态*/
+	background: #f68701;	
+}
+#articContent{						 	/*固定窗口*/
+	position: relative;
+	float:left;
+	height:882px;
+	width:1589px;
+	overflow: hidden;
+}
+#artivContentView{						/*移动窗口*/
+	position: absolute;
+	left:0px;												
+	height:882px;
+	width:11123px;
+}
+.articContentItem{
+	height:882px;
+	width:1589px;
+	float: left;
+	color: #eee;
+}
+.articContentVideo{
+	position: relative;
+	height:400px;
+	width:496px;
+	float: left;
+	background: url("../imgs/摄像头.jpg");
+	margin:16px;
+}
+.articContentVideo img{
+	height: 100%;
+	width:100%;
+}
+#articContentVideoMsg{
+	position:absolute;
+	width:100%;
+	height:50px;
+	text-align: center;
+	line-height: 50px;
+	color: #eee;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background: #3f4656;
+}

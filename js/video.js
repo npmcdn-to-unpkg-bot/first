@@ -7,7 +7,7 @@
 			var Index = $(this).index();
 			if(Index != 0){
 				$(this).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
-				Left = -1589*(Index-1) + 'px';
+				Left = -39*(Index-1) + 'rem';
 				$("#artivContentView").animate({left:Left},100);
 			}else{
 				$("#artic").show();

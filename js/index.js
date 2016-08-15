@@ -26,7 +26,7 @@
 	var Index;
 	$("#articLeftItem1").click(function(){
 		Index = 1;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -34,7 +34,7 @@
 	});
 	$("#articLeftItem2").click(function(){
 		Index = 2;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -42,7 +42,7 @@
 	});
 	$("#articLeftItem3").click(function(){
 		Index = 3;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -50,7 +50,7 @@
 	});
 	$("#articLeftItem4").click(function(){
 		Index = 4;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -58,7 +58,7 @@
 	});
 	$("#articRightItem1").click(function(){
 		Index = 5;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -66,7 +66,7 @@
 	});
 	$("#articRightItem2").click(function(){
 		Index = 6;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -74,7 +74,7 @@
 	});
 	$("#articRightItem3").click(function(){
 		Index = 6;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");
@@ -82,7 +82,7 @@
 	});
 	$("#articRightItem4").click(function(){
 		Index = 7;
-		Left = -1589*(Index-1) + 'px';
+		Left = -39*(Index-1) + 'rem';
 		$("#artic").hide();
 		$("#artic1").show();
 		$(".articNavItem").eq(Index).addClass("articNavItemActive").siblings().removeClass("articNavItemActive");

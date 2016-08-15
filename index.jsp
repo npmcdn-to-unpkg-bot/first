@@ -67,180 +67,60 @@
 		</div>
 		<div id="articContent">
 			<div id="artivContentView">
-				<div class="articContentItem articContentItem1">					
-					<div id="articEntrancetop">
-						<img src="imgs/menjin.jpg" alt="">
-						<h1>门禁系统管理界面</h1>
-					</div>
-					<div id="articEntrancebottom">
-						<div id="articEntrancebottomNav">
-							<div class="articEntrancebottomNavItem"><img src="imgs/jiluliebiao.jpg" alt=""><br/><p>记录列表</p></div>
-							<div class="articEntrancebottomNavItem"><img src="imgs/eye.jpg" alt="" id="articEntrancebottomNavItemjiankong"><br/><p>开始监控</p></div>
-							<div class="articEntrancebottomNavItem"><img src="imgs/tingzhijiankong.jpg" alt=""><br/><p>停止监控</p></div>
-							<div class="articEntrancebottomNavItem"><img src="imgs/qingkong.jpg" alt=""><br/><p>清空列表</p></div>
-							<div class="articEntrancebottomNavItem"><img src="imgs/back.jpg" alt=""><br/><p>返回</p></div>
-						</div>
-						<div id="articEntrancebottomTable">
-							<table border="1">
-								<tr>
-									<td>控制器IP</td>
-									<td>机房名称</td>
-									<td>状态</td>
-									<td>时间</td>
-									<td>姓名</td>
-									<td>部门</td>
-									<td>卡号</td>
-									<td>入门时间</td>
-									<td>出门时间</td>
-									<td>设备详细位置</td>
-									<td>负责人</td>
-								</tr>
-								<tr>
-									<td id="hh"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</table>
-						</div>
-					</div>
+				<div class="articContentItem articContentItem1">
+					<div id="articUpsTitle"><h1>ups和配电柜</h1></div>
+					<table id="articUpsTable">
+						<thead>
+							<td>机房详细地址</td>
+							<td>设备编号</td>
+							<td>运行状态</td>
+							<td>ups运行状态</td>
+							<td>剩余电量</td>
+							<td>负责人</td>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="width:338px;"><img src="imgs/jifang.jpg" alt=""><p style="width:210px;"></p></td>
+								<td style="width:240px;"><img src="imgs/ups.jpg" alt=""><p></p></td>
+								<td style="width:240px;"></td>
+								<td style="width:240px;"><img src="imgs/bingzhuangtu.jpg" alt=""><p></p></td>
+								<td style="width:240px;"></td>
+								<td style="width:240px;"></td>
+							</tr>
+							<tr>
+								<td><img src="imgs/jifang.jpg" alt=""><p></p></td>
+								<td><img src="imgs/ups.jpg" alt=""><p></p></td>
+								<td></td>
+								<td><img src="imgs/bingzhuangtu.jpg" alt=""><p></p></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><img src="imgs/jifang.jpg" alt=""><p></p></td>
+								<td><img src="imgs/ups.jpg" alt=""><p></p></td>
+								<td></td>
+								<td><img src="imgs/bingzhuangtu.jpg" alt=""><p></p></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><img src="imgs/jifang.jpg" alt=""><p></p></td>
+								<td><img src="imgs/ups.jpg" alt=""><p></p></td>
+								<td></td>
+								<td><img src="imgs/bingzhuangtu.jpg" alt=""><p></p></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><img src="imgs/jifang.jpg" alt=""><p></p></td>
+								<td><img src="imgs/ups.jpg" alt=""><p></p></td>
+								<td></td>
+								<td><img src="imgs/bingzhuangtu.jpg" alt=""><p></p></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="articContentItem articContentItem2">
 					<div class="articContentVideo">

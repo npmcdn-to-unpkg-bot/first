@@ -1,24 +1,24 @@
 #articLoushuiTitle{
-	height:87px;
-	width:1589px;
+	height:2.2rem;
+	width:39rem;
 }
 #articLoushuiTitle h1{
 	color:#eee;
-	font-size:50px;
+	font-size:1.25rem;
 	font-family: "微软雅黑";
 	text-align: center;
-	line-height: 87px;
+	line-height: 2.2rem;
 }
 #articLoushuiTable{
 	color:#eee;
 	text-align: center;
 	font-family: "微软雅黑";
-	font-size: 20px;
-	width:1589px;
-	height:700px;
+	font-size: .5rem;
+	width:39rem;
+	height:17.25rem;
 }
 #articLoushuiTable>thead{
-	line-height:70px;
+	line-height:1.725rem;
 	background: #3f4656;
 }
 #articLoushuiTable>tbody>tr{
@@ -26,19 +26,18 @@
 
 }
 #articLoushuiTable>tbody>tr>td{
-	height:120px;
+	height:3rem;
 	border:1px #000 solid;
 	color:#333;
 }
 #articLoushuiTable>tbody>tr>td img{
-	height:100px;
-	margin:10px;
+	height:2.5rem;
+	margin:.25rem;
 	float:left;
 }
 #articLoushuiTable>tbody>tr>td p{
 	display: block;
-	width:120px;
+	width:3rem;
 	float:right;
-	line-height: 60px;
-	word-wrap:break-word; 
-}
+	line-height:1.5rem;
+	word-wrap:break-word;Loushui

@@ -1,0 +1,157 @@
+.artic{
+	width:45rem;
+	height:22rem;
+	margin:0 auto;
+}
+.adminTop{
+	width:38rem;
+	height:3rem;
+	background: #484c58;
+	margin:0 auto;
+}
+.adminSearch{
+	float:left;
+	height:1rem;
+	width:8rem;
+	background:#eee;
+	border-radius:.6rem;
+	margin:1rem 0 0 7rem;
+}
+.adminSearch>div{
+	float: left;
+	width:3rem;
+	height:1rem;
+	border-radius:0 .6rem .6rem 0;
+	background:#fff;
+}
+.adminSearch>div:hover{
+	box-shadow: 0 0 .1rem #333 inset;
+	cursor: pointer;
+}
+.adminSearch>div>img{
+	float: left;
+	margin-top: .08rem;
+	height:.8rem;
+}
+.adminSearch>div>p{
+	font-family: "微软雅黑";
+	font-weight: lighter;
+	font-size: .5rem;
+	color:#333;
+	float: left;
+	line-height: 1rem;
+	margin:0 .25rem;
+}
+.adminSearch>input{
+	padding-left: .3rem;
+	margin:0;
+	height:1rem;
+	width:4.7rem;
+	float: left;
+	border-radius: .6rem 0 0 .6rem ;
+	border:0px;
+	background: #fff;
+	outline: none;
+	font-size: .6rem;
+	color: #333;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+}
+.adminSearch>input:focus{
+	box-shadow: 0 0 .05rem #333 inset;
+}
+.adminBtn{
+	float: left;
+	height:1rem;
+	width:4.5rem;
+	background: #fff;
+	border-radius:.6rem;
+	color: #333;
+	font-size: .6rem;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+	line-height: .9rem;
+	text-align: left;
+	text-decoration: none;
+	margin:1rem 0 0 2rem;
+}
+.adminBtn>img{
+	float: left;
+	margin: .1rem 0.3rem 0 .3rem;
+	height:.8rem;
+}
+form{
+	position: relative;
+	height:8rem;
+	width:10rem;
+	margin:3rem auto;
+	background: #fff;
+	display: none;
+}
+.formTitle{
+	height:1.2rem;
+	width:10rem;
+	background: #80d6d6;
+	text-align: center;
+	line-height: 1.2rem;
+	color: #fff;
+	font-size: .rem;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+	margin:0 0 1rem 0;
+}
+label{
+	display: block;
+	float: left;
+	width:2.5rem;
+	height:1rem;
+	color: #333;
+	font-size: .5rem;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+	text-align: center;
+	margin:.15rem 0 0 .15rem;
+}
+input{
+	float: left;
+	height:.8rem;
+	width:6rem;
+	margin:.15rem 0 0 .15rem;
+	font-size: .5rem;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+	text-align: left;
+}
+button{
+	height:.8rem;
+	width:2rem;
+	border-radius: .1rem;
+	border:0;
+	color: #333;
+	font-size: .5rem;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+	text-align: center;
+	margin:1rem 1rem 0 0;
+	cursor: pointer;
+}
+button:active{
+	background: #333;
+	color: #eee;
+}
+.formAlert{
+	position: absolute;
+	box-shadow: 0 0 .1rem red inset;
+	border-radius: .2rem;
+	height:3rem;
+	width:5rem;
+	color: red;
+	font-size: .6rem;
+	font-family: "微软雅黑";
+	font-weight:lighter;
+	text-align: center;
+	line-height: 1.5rem;
+	word-break: break-all;
+	left:11rem;
+	top:3rem;
+}

@@ -23,10 +23,8 @@
 			<div class="loginWarning" id="passwordWarning" class="warning">! 请输入密码</div>
 		</form>		
 
-	<script>
-		
-	</script>	<script src="js/jquery.min.js"></script>
-	<!-- <script src="js/login.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+
 	<script>		
 			(function(){
 			$(".loginWarning").hide();
@@ -41,25 +39,27 @@
 					$("#passwordWarning").show();
 					}else{
 						$("#passwordWarning").hide();
-						$.ajax({ 
-						    type: "post", 	
-							url: "",
-							data:{
-								uesername:$('#loginManager input').val(),
-								password:$('#loginPassword input').val()
-							},
-							dataType: "json",
-							success: function(data) {
-								if (data.success) { 
-									location.href = 'index.jsp';
-								}
-							},
-							error: function(data){     
-							   	$('#loginManager input').focus();
-								$("#managerWarning").show(); 
-								$('#loginManager input').val(""); 
-							},     
-						});
+						
+						location.href = 'index.jsp';
+						// $.ajax({ 
+						//     type: "post", 	
+						// 	url: "",
+						// 	data:{
+						// 		uesername:$('#loginManager input').val(),
+						// 		password:$('#loginPassword input').val()
+						// 	},
+						// 	dataType: "json",
+						// 	success: function(data) {
+						// 		if (data.success) { 
+						// 			location.href = 'index.jsp';
+						// 		}
+						// 	},
+						// 	error: function(data){     
+						// 	   	$('#loginManager input').focus();
+						// 		$("#managerWarning").show(); 
+						// 		$('#loginManager input').val(""); 
+						// 	},     
+						// });
 					};
 				};
 				return false;

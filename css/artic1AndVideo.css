@@ -2,7 +2,6 @@
 	width:45rem;
 	height:44.5rem;
 	background:#484c58;
-	display: none;
 	margin:0 auto;
 }
 #articNav{
@@ -37,9 +36,10 @@
 }
 #artivContentView{						/*移动窗口*/
 	position: absolute;
-	left:0px;												
+	left:0rem;												
 	height:22rem;
 	width:273rem;
+	display: none;
 }
 .articContentItem{
 	height:22rem;

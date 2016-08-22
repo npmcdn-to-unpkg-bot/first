@@ -1,0 +1,10 @@
+(function(){
+	$("#mapIcon1").click(function(){
+		$("#mapMsg").show();
+		$("#mapMap").hide();
+	});
+	$("#mapExit").click(function(){
+		$("#mapMsg").hide();
+		$("#mapMap").show();
+	});
+})()

@@ -30,19 +30,21 @@
             <a href="##" class="adminBtn" id="addAdmin"><img src="imgs/add.jpg" alt=""><p>添加用户</p></a>
             <a href="##" class="adminBtn" id="delectAdmin"><img src="imgs/delect.jpg" alt=""><p>删除用户</p></a>
         </div>
-        <div class="tableWin">
-            <table id="exampletable7">
+        <div class="tableWin">                  
+            <table id="table2" class="table" cellpadding="0" cellspacing="0">
                 <thead>
-                    <th></th>
-                    <th>id</th>
-                    <th>用户名</th>
-                    <th>权限</th>
-                    <th>操作</th>
+                    <tr>
+                        <th>1</th>
+                        <th>用户ID</th>
+                        <th>用户名</th>
+                        <th>用户权限</th>
+                        <th>操作</th>
+                    </tr>
                 </thead>
-                <tbody>
-                    
+                <tbody>                             
                 </tbody>
             </table>
+            <div class="tablePage" id="tablePage2"></div>
         </div>
         <form action="">
             <div class="formTitle">添加用户</div>
@@ -60,15 +62,88 @@
     <script src="js/slimtable.min.js"></script>
     <script>
     (function(){
-        $("#addAdmin").click(function(){
-            $(".tableWin").hide();
-            $("form").show();
+        $(document).ready(function(){
+            Index = 2;
+            var tableId = "#table" + Index;
+            var pageDivId = "#tablePage" + Index;
+            var url = "json.json";
+            $.ajax({
+                type:"GET",
+                url:url,
+                dataType:"json",
+                success:function(data){
+                    tableSuccess(tableId,pageDivId,data);
+                }
+            })
         });
-        $("#delectAdmin").click(function(){
-            $(".tableWin").show();
-            $("form").hide();
+
+        function tableSuccess(a,b,c){//tableId,pageDivId,data,
+        // var aa = eval("("+data+")");
+        var ar = c.key;
+        $(a)
+        .find("tbody").html("");
+
+        for(var i=0;i<ar.length;i++){
+            var ad = ar[i];
+            var tableData = 
+"<tr><td>"+""+"</td><td>"+ad.name+"</td><td>"+ad.name+"</td><td>"+ad.name+"</td><td>"+ad.name+"</td></tr>";
+//管理员页面用户信息展示
+             
+        $(a)
+        .find("tbody")
+        .append(tableData);
+                                    
+        };//添加至表格的数据
+        createPage(a,b);        
+    };
+    
+    function createPage(e,f){//tableId,pageDivId
+        var trLength = $(e).find("tbody").find("tr").length;//获取行数
+
+        for(var n=trLength;n>=10;n--){
+            $(e).find("tbody").find("tr").eq(n).hide();
+        }
+
+        var pageCounts = Math.ceil(trLength/10);//页数  向上取整
+
+        $(f).html("");
+
+        for(var i=1;i<=pageCounts;i++){
+            $(f).append("<div>"+i+"</div>");//添加页面框
+        };
+
+        $(f).find("div").click(function(){
+            var pageIndex = $(this).index()+1;
+            pageClick(e,pageIndex);
         });
+    };
+
+    function pageClick(o,p){//tableId,pageIndex
+            
+            $(o)
+            .find("tbody")               
+            .find("tr").hide();//清空tbody内容
+
+            for(var i=(p-1)*10;i<=p*10-1;i++){
+                console.log(i);
+                $(o)
+                .find("tbody")
+                .find("tr")
+                .eq(i).show();           //显示该页面的内容，选择第n个来显示
+            }
+        };
     })();
+    
+        (function(){
+            $("#addAdmin").click(function(){
+                $(".tableWin").hide();
+                $("form").show();
+            });
+            $("#delectAdmin").click(function(){
+                $(".tableWin").show();
+                $("form").hide();
+            });
+        })();
 
         (function(){
             $(".formAlert").hide();

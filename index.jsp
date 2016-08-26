@@ -5,7 +5,6 @@
 	<title>index</title>
 	<link rel="stylesheet" href="css/headerAndMap.css">
 	<link rel="stylesheet" href="css/artic1AndVideo.css">
-	<!-- <link rel="stylesheet" href="css/site.css"> -->
 	<link rel="stylesheet" href="css/slimtable.css">
 </head>
 <body>
@@ -18,7 +17,7 @@
 			</div>				
 		<img src="imgs/logo.jpg" alt="">
 		<p>机房动力环境集中监控系统</p>
-		<a href="managerView.jsp" class="managerView">管理员界面</a>
+		<a href="managerView.jsp" class="managerView" id="managerView">管理员界面</a>
 		<div id="headerTime"></div>
 		<div id="headerManager">
 			<img src="imgs/admin.jpg" alt="">
@@ -81,7 +80,7 @@
 				<div class="articContentItem articContentItem1">
 					<h1 class="tableH1">门禁系统</h1>
 					<div class="tableWin">					
-						<table id="table1">
+						<table id="table1" class="table" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
 									<th>机房详细地址</th>
@@ -92,8 +91,7 @@
 									<th>负责人</th>
 								</tr>
 							</thead>
-							<tbody>
-								
+							<tbody>								
 							</tbody>
 						</table>
 						<div class="tablePage" id="tablePage1"></div>
@@ -128,7 +126,7 @@
 				<div class="articContentItem articContentItem3">
 					<h1 class="tableH1">摄像头</h1>
 					<div class="tableWin">					
-						<table id="exampletable2">
+						<table id="table3" class="table" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
 									<th>机房详细地址</th>
@@ -139,16 +137,16 @@
 									<th>负责人</th>
 								</tr>
 							</thead>
-							<tbody>
-								
+							<tbody>								
 							</tbody>
 						</table>
+						<div class="tablePage" id="tablePage3"></div>
 					</div>
 				</div>
 				<div class="articContentItem articContentItem4">
 					<h1 class="tableH1">录像机</h1>
 					<div class="tableWin">					
-						<table id="exampletable3">
+						<table id="table4" class="table" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
 									<th>机房详细地址</th>
@@ -159,17 +157,17 @@
 									<th>负责人</th>
 								</tr>
 							</thead>
-							<tbody>
-								
+							<tbody>								
 							</tbody>
 						</table>
+						<div class="tablePage" id="tablePage4"></div>
 					</div>
 					</table>
 				</div>
 				<div class="articContentItem articContentItem5">
 					<h1 class="tableH1">漏水监测</h1>
 					<div class="tableWin">					
-						<table id="exampletable4">
+						<table id="table5" class="table" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
 									<th>机房详细地址</th>
@@ -180,109 +178,16 @@
 									<th>负责人</th>
 								</tr>
 							</thead>
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>
+							<tbody>								
+							</tbody>
 						</table>
+						<div class="tablePage" id="tablePage5"></div>
 					</div>
 				</div>
 				<div class="articContentItem articContentItem6">
 					<h1 class="tableH1">温湿度监测</h1>
 					<div class="tableWin">					
-						<table id="exampletable5">
+						<table id="table6" class="table" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
 									<th>机房详细地址</th>
@@ -293,109 +198,16 @@
 									<th>负责人</th>
 								</tr>
 							</thead>
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>
+							<tbody>								
+							</tbody>
 						</table>
+						<div class="tablePage" id="tablePage6"></div>
 					</div>
 				</div>
 				<div class="articContentItem articContentItem7">
 					<h1 class="tableH1">空调监测</h1>
 					<div class="tableWin">					
-						<table id="exampletable6">
+						<table id="table7" class="table" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
 									<th>机房详细地址</th>
@@ -406,103 +218,10 @@
 									<th>负责人</th>
 								</tr>
 							</thead>
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>	
-							<tr>
-								<td>1</td>
-								<td>Alisa</td>
-								<td>Smith</td>
-								<td>34</td>
-								<td>Unemployed</td>
-								<td>123</td>
-							</tr>
+							<tbody>								
+							</tbody>
 						</table>
+						<div class="tablePage" id="tablePage7"></div>
 					</div>
 				</div>
 				</div>

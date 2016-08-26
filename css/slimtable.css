@@ -6,20 +6,47 @@
 }
 .tableWin{
 	width:38rem;
-	height:15rem;
+	height:18rem;
 	overflow:hidden;
 	margin:0 auto;
-
+	position: relative;
 }
 .table{
 	width:100%;
-	height:100%;
+	border:1px solid #3f4656;
+	font-family: "微软雅黑";
+	font-weight: lighter;
 }
+
 .table>thead>tr>th{
 	color: #fff;
+	background: #3f4656;
+	line-height: 1.6rem;
+	border:1px solid #3f4656;
+	font-weight: lighter;
 }
 .table>tbody>tr>td{
 	color: #eee;
+	height:1.3rem;
+	line-height:.2rem;
+	font-size: .6rem;
+	text-align: center;
+	border:1px solid #3f4656;
+	font-weight: lighter;
+}
+.table>tbody>tr{
+	height:1rem;
+}
+.table>tbody>tr:nth-child(even){
+	background: #3f4656;
+}
+.table>tbody>tr:hover{
+	background: #333;
+}
+.tablePage{
+	position:absolute;
+	left:3rem;
+	bottom: 0;
 }
 .tablePage>div{
 	text-decoration:none;
@@ -28,13 +55,17 @@
 	font-family: "微软雅黑";
 	font-size: .6rem;
 	height:1rem;
-	width:5rem;
+	width:2rem;
 	text-align: center;
 	line-height: 1rem;
 	float: left;
 	background:#3f4656; 
 	border-radius: 5px;
-	margin-left: 9rem;
+	cursor: pointer;
+	margin:0 .2rem 0 0;
+}
+.tablePage>div:hover{
+	background: #333;
 }
 .color{
 	height:50px;

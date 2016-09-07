@@ -19,7 +19,7 @@
 			</div>
 			<div id="loginReset">重置</div>
 			<div id="loginSubmit">登录</div>
-			<div class="loginWarning" id="managerWarning" class="warning">! 请输入账号</div>
+			<div class="loginWarning" id="managerWarning" class="warning">! 请输入dd账号</div>
 			<div class="loginWarning" id="passwordWarning" class="warning">! 请输入密码</div>
 		</form>		
 
